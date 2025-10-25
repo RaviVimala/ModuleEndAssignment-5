@@ -1,0 +1,255 @@
+/* General Reset */
+/* * {
+  /* box-sizing: border-box;
+  margin: 0;
+  padding: 0; */
+  
+
+/* Background and font */
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  color: #4b351b;
+  padding-left: 900px;
+}
+
+/* Centered auth container */
+.container {
+  display: flex;
+  height: 100vh;
+  
+  align-items: center;
+}
+
+/* Auth Card */
+.card {
+  background: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  width: 360px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Title */
+h2 {
+  text-align: center;
+  color: #122feb;
+  font-size: 26px;
+  margin-bottom: 1.2rem;
+}
+
+/* Input fields */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #6366f1;
+  outline: none;
+  box-shadow: 0 0 5px rgba(99, 102, 241, 0.5);
+}
+
+/* Buttons */
+button {
+  padding: 12px;
+  background: linear-gradient(to right, #059d63, #8b5cf6);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  }
+
+button:hover {
+  background: linear-gradient(to right, #4ee546, #7c3aed);
+  transform: scale(1.03);
+}
+
+button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Auth links */
+p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+a {
+  color: #46abe5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+  background: linear-gradient(135deg, #ede9fe, #e0e7ff);
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.dashboard {
+  background: white;
+  width: 500px;
+  margin-right: 100px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  color: #22f217;
+}
+
+.logout {
+  background: linear-gradient(to right, #71f895, #ef4444);
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout:hover {
+  background: linear-gradient(to right, #3e26dc, #b91c5d);
+}
+
+/* Task form */
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.task-form input {
+  flex: 1;
+}
+
+.task-form button {
+  padding: 12px 18px;
+}
+
+/* Task list */
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  background-color: #f3f4f6;
+  border-left: 5px solid #6366f1;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.task-item:hover {
+  background-color: #e0e7ff;
+}
+
+.task-item button {
+  background: linear-gradient(to right, #f97316, #ea580c);
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.task-item button:hover {
+  background: linear-gradient(to right, #c2410c, #9a3412);
+}
+/* 🌈 Floating Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(99, 102, 241, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  z-index: 50;
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.1);
+}
+
+.nav-left h3 {
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-right p {
+  font-size: 14px;
+  color: #1e1b4b;
+  background: rgba(237, 233, 254, 0.6);
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+.submit{
+  background-color: #059d63;
+}
+.logout {
+  background: linear-gradient(to right, #a33a3a, #44a2ef);
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout:hover {
+  background: linear-gradient(to right, #140e4a, #024710);
+  transform: scale(1.05);
+}
+
+/* Adjust dashboard padding for navbar height */
+.dashboard-container {
+  padding-top: 90px;
+}
